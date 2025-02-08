@@ -1,0 +1,107 @@
+/* SpeechTextProcessor.css */
+
+/* Background Styling */
+body {
+    background-image: url("../assets/background.jpg"); /* Make sure this path matches your file */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title */
+  h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Input field */
+  input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Voice button */
+  .speak-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .speak-btn:hover {
+    background: #218838;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* AI Button */
+  .ai-btn {
+    background: #ff9800;
+    color: white;
+  }
+  
+  .ai-btn:hover {
+    background: #e68900;
+  }
+  
+  /* Response Box */
+  .response-box {
+    margin-top: 15px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* AI Response Box */
+  .ai-response {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f1c40f;
+    color: #222;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
