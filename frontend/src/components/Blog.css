@@ -1,0 +1,75 @@
+/* Ensure base HTML & body allow scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the entire blog section */
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Blog form styles */
+.blog-form {
+  margin-bottom: 20px;
+}
+
+.blog-form input,
+.blog-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.blog-form button {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  font-size: 16px;
+}
+
+.blog-form button:hover {
+  background: #0056b3;
+}
+
+/* Blog posts list */
+.blog-posts {
+  margin-top: 20px;
+  padding-right: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* Individual blog post */
+.blog-post {
+  background: #f8f9fa;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.blog-post h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.blog-post span {
+  color: #777;
+  font-size: 14px;
+}

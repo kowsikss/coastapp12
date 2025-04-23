@@ -1,0 +1,118 @@
+/* TasteTheCoast.css */
+
+.taste-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+  
+  .bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+  
+  .content-overlay {
+    position: relative;
+    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-desc {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .controls input,
+  .controls select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .dish-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+  }
+  
+  .dish-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .dish-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: 2px solid white;
+  }
+  
+  .restaurant {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .map-link {
+    color: #00ffcc;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .map-link:hover {
+    text-decoration: underline;
+  }
+  
+  .rating {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: gold;
+  }
+  
+  /* Hide default scroll bar */
+  .content-overlay::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  
+  .content-overlay {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  

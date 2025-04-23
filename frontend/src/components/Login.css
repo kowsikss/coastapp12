@@ -1,0 +1,240 @@
+/* General Reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.login-container {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-placeholder::placeholder {
+  color: #444; /* Darker placeholder color */
+}
+/* Splash Screen Styling */
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);  /* Overlay for better readability */
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.splash-img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.splash-screen h1 {
+  color: white;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+/* Login Box Styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.9); /* White box with slight opacity */
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  z-index: 2;  /* To make sure the form is above the splash screen */
+}
+
+/* Heading */
+.login-box h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Sign In Method Button Styling */
+.sign-in-method button {
+  background-color: #00bcd4;
+  color: black;
+  border: none;
+  padding: 15px;
+  width: 48%;
+  margin: 10px 1%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.sign-in-method button:hover {
+  background-color: #008c91;
+}
+
+.sign-in-method button.active {
+  background-color: #008c91;
+}
+
+/* Input Field Styling */
+.input-field {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border 0.3s;
+}
+
+.input-field:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+/* Phone Input Section */
+.phone-input select {
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.phone-input input {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: calc(100% - 90px);
+  background-color: #fafafa;
+}
+
+/* Button Styling */
+.otp-btn {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.otp-btn:hover {
+  background-color: #187bcd;
+}
+
+/* Toggle Text Styling */
+.toggle-text {
+  margin-top: 20px;
+  color: #555;
+}
+
+.toggle-text span {
+  color: #1e90ff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-text span:hover {
+  text-decoration: underline;
+}
+
+/* User Profile Section */
+.user-profile {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.user-profile h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* File Input for Photo Upload */
+.file-input {
+  margin-top: 10px;
+}
+
+/* Small Adjustment for Mobile Responsiveness */
+@media (max-width: 420px) {
+  .login-box {
+    padding: 20px 25px;
+    max-width: 100%;
+  }
+  .sign-in-method button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-title {
+  color: white;
+  font-size: 2rem;
+}
+
+.login-box, .user-details-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.otp-btn, .submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.otp-btn:hover, .submit-btn:hover {
+  background: #0056b3;
+}

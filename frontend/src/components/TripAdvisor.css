@@ -1,0 +1,125 @@
+/* Full-page container */
+.trip-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Background video */
+.trip-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Overlay for better readability */
+.trip-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+/* Form container */
+.trip-form {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 500px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+/* Heading */
+.trip-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* Input fields */
+.trip-input,
+.trip-select {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.trip-input:focus,
+.trip-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0px 0px 12px rgba(37, 99, 235, 0.5);
+}
+
+/* Labels */
+.trip-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+/* Submit button */
+.trip-button {
+  width: 100%;
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  border: none;
+}
+
+.trip-button:hover {
+  background: linear-gradient(to right, #1e40af, #102a63);
+  transform: translateY(-3px);
+}
+
+.trip-button:active {
+  transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .trip-form {
+    padding: 2rem;
+    max-width: 95%;
+  }
+
+  .trip-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* Improved spacing between form elements */
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
